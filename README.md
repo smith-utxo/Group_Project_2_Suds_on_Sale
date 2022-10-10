@@ -2,6 +2,9 @@
 ## Description
 Suds on sale is an online forum for the thrifty alcohol enthusiasts to talk about and share deals with other users. This webpage is structured with the Model View Controller design paradigm. For the Model: Sequelize and MySQL2 Nodejs modules are used to create the models and link the models to our database via Object Relational Mapping; in addition to those, we used ConnectSequelizeSessionJs to link any sessions created to the database. For the View: Handlebars is used for creating the templates as well as having supporting frontend JavaScript and CSS. For the Controller: Express and Express Sessions were used to set up our server, our routes to connect our models to the front end, and to establish sessions for the user. An additional technology used was LinkPreviewJs; this was used to retrieve a URL containing an image for the users post.
 
+## Deployed URL: 
+https://group-project-dos.herokuapp.com/ 
+
 ## How to Install and Run
 Suds on sale is deployed at [Suds On Sale](https://group-project-dos.herokuapp.com/). To run this project locally you will need to:
 1. Clone the repository to you computer at [GitHub](https://github.com/lundbmp/group-project-2). 
