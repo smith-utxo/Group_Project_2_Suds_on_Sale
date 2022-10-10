@@ -1,0 +1,47 @@
+<section>
+  <h2>Create New Post</h2>
+
+  <form class="new-post-form">
+    <div>
+      <label for="post-title">Title of Product</label>
+      <input type="text" id="post-title" class="post-title">
+    </div>
+    <div>
+      <label for="post-url">Link of Product</label>
+      <input type="text" id="post-url" name="post-url">
+    </div>
+    <div>
+      <label for="post-body">Description</label>
+      <input type="text" id="post-body" name="post-body">
+    </div>
+    <div>
+      <label for="price">Price</label>
+      <input type="text" id="price" name="price">
+    </div>
+    <div>
+      <label for="category-id">Category</label>
+      <input type="text" id="category-id" name="category-id">
+    </div>
+    <div>
+      <label for="tag-id">Tag</label>
+      <input type="text" id="tag-id" name="tag-id">
+    </div>
+    <button class="btn" type="submit">Create</button>
+  </form>
+</section>
+
+{{#if posts.length}}
+<section>
+  <h2>Your Posts</h2>
+  <ol>
+    {{#each posts as |post|}}
+    <li>
+      {{> post-info post}}
+      <a href="/dashboard/edit/{{post.id}}" class="edit-link">Edit post</a>
+    </li>
+    {{/each}}
+  </ol>
+</section>
+{{/if}}
+
+<script src="/javascript/add-post.js"></script>
